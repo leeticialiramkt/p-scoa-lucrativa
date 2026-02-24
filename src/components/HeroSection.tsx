@@ -1,19 +1,19 @@
-import heroImage from "@/assets/hero-easter.jpg";
+import bannerImage from "@/assets/banner-pascoa.png";
 import CtaButton from "./CtaButton";
 import { Shield, Zap } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-dark-premium overflow-hidden">
-      {/* Background image with overlay */}
+    <section className="relative min-h-screen flex items-center bg-background overflow-hidden">
+      {/* Banner image as subtle background */}
       <div className="absolute inset-0">
         <img
-          src={heroImage}
-          alt="Ovos de Páscoa premium com detalhes em ouro"
-          className="w-full h-full object-cover opacity-30"
+          src={bannerImage}
+          alt="Banner Guia Páscoa Lucrativa"
+          className="w-full h-full object-cover opacity-10"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/60 to-dark" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
       </div>
 
       <div className="relative container mx-auto py-16 md:py-24 px-4">
@@ -24,18 +24,18 @@ const HeroSection = () => {
           </p>
 
           {/* Headline */}
-          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondary-foreground leading-tight mb-6">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
             Transforme a Páscoa de 2026 na{" "}
             <span className="text-gold-gradient">Mais Lucrativa</span>{" "}
             da Sua Vida
           </h1>
 
-          <p className="font-display text-lg md:text-xl text-secondary-foreground/80 italic mb-6">
+          <p className="font-display text-lg md:text-xl text-foreground/70 italic mb-6">
             (Sem Trabalhar 24h por Dia e Sem Ficar Perdida no Instagram)
           </p>
 
           {/* Sub-headline */}
-          <p className="text-secondary-foreground/70 font-body text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-muted-foreground font-body text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
             Descubra o método exato e os comandos de Inteligência Artificial que vão criar o seu cardápio, escrever seus posts e lotar sua agenda no WhatsApp em questão de minutos.{" "}
             <strong className="text-gold">Chega de pagar para trabalhar!</strong>
           </p>
@@ -47,11 +47,11 @@ const HeroSection = () => {
 
           {/* Trust badges */}
           <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
-            <div className="flex items-center gap-2 text-secondary-foreground/60 text-sm font-body">
+            <div className="flex items-center gap-2 text-muted-foreground text-sm font-body">
               <Shield className="w-5 h-5 text-gold" />
               <span>Garantia de 7 dias</span>
             </div>
-            <div className="flex items-center gap-2 text-secondary-foreground/60 text-sm font-body">
+            <div className="flex items-center gap-2 text-muted-foreground text-sm font-body">
               <Zap className="w-5 h-5 text-gold" />
               <span>Acesso imediato</span>
             </div>

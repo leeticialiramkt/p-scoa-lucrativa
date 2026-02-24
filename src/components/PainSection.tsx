@@ -43,7 +43,7 @@ const PainSection = () => {
         </div>
 
         <div className="mt-12 max-w-2xl mx-auto">
-          <blockquote className="bg-secondary text-secondary-foreground p-6 md:p-8 rounded-lg text-center gold-border">
+          <blockquote className="bg-muted text-foreground p-6 md:p-8 rounded-lg text-center gold-border">
             <p className="font-display text-lg md:text-xl italic leading-relaxed">
               "A verdade é uma só: fazer um ovo perfeito não é suficiente se você não souber{" "}
               <span className="text-gold font-bold not-italic">vendê-lo com lucro.</span>"
