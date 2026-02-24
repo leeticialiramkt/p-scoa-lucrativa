@@ -2,18 +2,14 @@ import { ShieldCheck } from "lucide-react";
 
 const GuaranteeSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-muted/30">
+    <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto bg-card rounded-xl gold-border p-8 md:p-12 text-center">
+        <div className="max-w-2xl mx-auto card-premium p-8 md:p-12 text-center">
           <div className="flex justify-center mb-6">
             <div className="w-20 h-20 rounded-full bg-gold/10 flex items-center justify-center gold-border">
               <ShieldCheck className="w-10 h-10 text-gold" />
             </div>
           </div>
-
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
-            🔒 Seu Risco é <span className="text-gold-gradient">ZERO!</span>
-          </h2>
 
           <h3 className="font-display text-lg md:text-xl text-gold mb-6">
             Garantia Incondicional de 7 Dias
